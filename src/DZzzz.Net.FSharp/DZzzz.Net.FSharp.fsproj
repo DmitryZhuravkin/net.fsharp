@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Topics\Functions\Functions.fs" />
+    <Compile Include="Topics\Sequences.fs" />
+    <Compile Include="Topics\FunctionsValues.fs" />
+    <Compile Include="Topics\Sets.fs" />
+    <Compile Include="Topics\Options.fs" />
+    <Compile Include="Topics\Strings.fs" />
+    <Compile Include="Topics\Tuples.fs" />
+    <Compile Include="Topics\Objects.fs" />
+    <Compile Include="Topics\Common.fs" />
+    <Compile Include="Topics\Modules.fs" />
+    <Compile Include="Topics\Lists.fs" />
+    <Compile Include="Topics\Comments.fs" />
+    <Compile Include="Topics\Let.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>
