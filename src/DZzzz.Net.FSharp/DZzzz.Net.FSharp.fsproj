@@ -6,9 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Topics\Functions\LambdaExpressions.fs" />
     <Compile Include="Topics\Functions\Functions.fs" />
     <Compile Include="Topics\Sequences.fs" />
-    <Compile Include="Topics\FunctionsValues.fs" />
     <Compile Include="Topics\Sets.fs" />
     <Compile Include="Topics\Options.fs" />
     <Compile Include="Topics\Strings.fs" />
