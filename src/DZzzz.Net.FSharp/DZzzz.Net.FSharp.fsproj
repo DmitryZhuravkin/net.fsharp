@@ -6,6 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Topics\Attributes.fs" />
+    <Compile Include="Topics\Functions\Inline.fs" />
+    <Compile Include="Topics\Functions\Recursion.fs" />
+    <Compile Include="Topics\Functions\DoBindings.fs" />
+    <Compile Include="Topics\Functions\LetBindings.fs" />
     <Compile Include="Topics\Functions\LambdaExpressions.fs" />
     <Compile Include="Topics\Functions\Functions.fs" />
     <Compile Include="Topics\Sequences.fs" />

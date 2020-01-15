@@ -31,33 +31,6 @@ module FunctionsModule =
     let smallPipeVolume = cylinderVolume smallPipeRadius
     let bigPipeVolume = cylinderVolume bigPipeRadius
 
-    // Recursive functions
-    let rec factorial n = 
-        if n <= 1 then 1 
-        else n * factorial (n-1)
-
-    let rec factorialMatch n =
-        match n with
-        | _ when n<=1   -> 1
-        | _             -> n * factorialMatch (n-1)
-
-    printfn "factorial: %d" (factorial 5)
-    printfn "factorialMatch: %d" (factorialMatch 5)
-
-    // Tail recursive functions
-    let rec factorialTailAcc n acc = 
-        match n with
-        | _ when n<=1   -> 1
-        | _             -> factorialTailAcc (n-1) acc * n
-
-    let factorialTail n = factorialTailAcc n 1
-
-    printfn "factorialTail: %d" (factorialTail 5)
-
-    // Mutually recursive functions
-    let rec even n = (n = 0u) || odd(n-1u)
-    and     odd n = (n <> 0u) && even(n-1u)
-
     // Function as an input value of another function
     let apply1 (transform: int -> int) y = transform y
 
@@ -65,8 +38,8 @@ module FunctionsModule =
     let apply2 (f: int -> int -> int) x y = f x y
 
     // Lambda expression is an unnamed function
-    let result3 = apply1 (fun x -> x + 1) 100
-    let result4 = apply2 (fun x y -> x * y ) 10 20
+    let resultApply1 = apply1 (fun x -> x + 1) 100
+    let resultApply2 = apply2 (fun x y -> x * y ) 10 20
 
     // Function Composition
     let function1 x = x + 1
@@ -74,13 +47,28 @@ module FunctionsModule =
     let h = function1 >> function2
     let result5 = h 100
 
-    // Function Composition with different argument count (TODO)
+    // Function Composition with different argument count (???)
     let function1Dif x = x + 1
     let function2Dif x y = x * y
     let hDif = function1Dif >> function2Dif
     let resultDifFunction = h 100
-    
+
     // Function Pipelining
     let result = 100 |> function1 |> function2
 
-    // Function Piplelining in different orders (TODO)
+    // Function composition in different order
+    let addOne x = x + 1
+    let timesTwo x = 2 * x
+    
+    let Compose2 = addOne >> timesTwo // Composition operator: ( >> ) : ('T1 -> 'T2) -> ('T2 -> 'T3) -> 'T1 -> 'T3
+    let Compose1 = addOne << timesTwo // Backward composition operator: ( << ) : ('T2 -> 'T3) -> ('T1 -> 'T2) -> 'T1 -> 'T3
+    
+    let result1 = Compose1 2 // Result is 5
+    let result2 = Compose2 2 // Result is 6
+
+    // Pipelining in different order
+    let Pipeline2 x = addOne x |> timesTwo // Pipeline operator: ( |> ) : 'T1 -> ('T1 -> 'U) -> 'U
+    let Pipeline1 x = addOne <| timesTwo x // Backward pipeline operator: ( <| ) : ('T -> 'U) -> 'T -> 'U
+    
+    let result3 = Pipeline1 2 // Result is 5
+    let result4 = Pipeline2 2 // Result is 6
