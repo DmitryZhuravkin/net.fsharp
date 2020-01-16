@@ -11,6 +11,8 @@ module LetBindingsModule =
     // Simple definitions
     let i, j, k = (1, 2, 3) // tuple decomposition
 
+    let floatValue : float = 4.0
+
     // With body expression
     let result =
         let i, j, k = (1, 2, 3) // these variables in the scope of 'result' binding

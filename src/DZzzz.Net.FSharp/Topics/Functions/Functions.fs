@@ -19,7 +19,11 @@ module FunctionsModule =
     
     // Function with tuple as return value
     let fWithTupleReturn x = (x, x)
-        
+    
+    // Automatic generalization for function
+    // The compiler considers the parameter to be generic in this case
+    let makeTuple a b = (a, b) // 'a -> 'b -> 'a * 'b
+
     // Partial application of arguments, refered to curring
     let smallPipeRadius = 2.0
     let bigPipeRadius = 3.0

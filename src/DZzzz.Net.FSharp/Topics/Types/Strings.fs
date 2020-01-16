@@ -7,7 +7,7 @@ let exampleString3 = @"c:\Program Files"            // Verbatim string, Type: st
 let exampleString4 = "xyZy3d2"B                     // Literal byte array, Type: byte[]
 let exampleString5 = 'c'                            // Character, Type: char
 let exampleString6 = "\"Hello\""
-let exampleString7 = @"He""ll""o"
+let exampleString7 = @"He""ll""o"                   // Using a verbatim string
 let exampleString8 = """He"ll"o"""
 
 let str1 = "abc\
@@ -31,14 +31,20 @@ let stringWithTrippleQuates = """
 </catalog>
 """
 
-printfn "%s" exampleString6
-printfn "%s" exampleString7
-printfn "%s" exampleString8
+// Access to character
+printfn "%c" str1.[1]
+// Subsctings
+printfn "%s" str1.[3..5]
+
+// "abc" interpreted as a Unicode string.
+let strUnicode : string = "abc"
+// "abc" interpreted as an ASCII byte array.
+let byteArray = "abc"B // val byteArray : byte [] = [|97uy; 98uy; 99uy|]
+
+// concatination
+let sAgain  = "Couldn't put Humpty" + " " + "together again" // by using the + operator or by using the ^ operator
+let sAgain1  = "Couldn't put Humpty" ^ "together again" // by using the ^ operator, warning is displayed
 
 (*String functions/properties*)
 let s = "Couldn't put Humpty"
-
 printfn "s Length: %d" s.Length
-
-(**)
-let sAgain  = "Couldn't put Humpty" + " " + "together again"
