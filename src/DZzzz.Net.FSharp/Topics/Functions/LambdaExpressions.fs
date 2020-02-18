@@ -10,7 +10,7 @@ module LambdaExpressionsModule =
 
     // Lambda expression is an unnamed function
     let result3 = apply1 (fun x -> x + 1) 100
-    let result4 = apply2 (fun x y -> x * y ) 10 20
+    let result4 = apply2 (fun (x:int) (y:int) -> x * y ) 10 20
 
     // Lambda with List.map
     let list = List.map (fun i -> i + 1) [1; 2; 3]

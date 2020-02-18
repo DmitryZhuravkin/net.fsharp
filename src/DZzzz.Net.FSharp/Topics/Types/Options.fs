@@ -1,8 +1,12 @@
 ﻿(*
 
-The option type in F# is used when an actual value might not exist for a named value or variable. 
-An option has an underlying type and can hold a value of that type, or it might not have a value.
+    The option type in F# is used when an actual value might not exist for a named value or variable. 
+    An option has an underlying type and can hold a value of that type, or it might not have a value.
 
+    The option type is a discriminated union!!!!!
+    type Option<'a> =
+        | Some of 'a
+        | None
 *)
 
 module Options

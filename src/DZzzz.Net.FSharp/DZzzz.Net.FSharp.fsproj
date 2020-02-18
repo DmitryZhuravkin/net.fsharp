@@ -6,24 +6,30 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Topics\CollectionTypes\Sets.fs" />
+    <Compile Include="Topics\CollectionTypes\Map.fs" />
+    <Compile Include="Topics\CollectionTypes\Lists.fs" />
+    <Compile Include="Topics\CollectionTypes\Arrays.fs" />
+    <Compile Include="Topics\CollectionTypes\Sequences.fs" />
     <Compile Include="Topics\Functions\Inline.fs" />
     <Compile Include="Topics\Functions\Recursion.fs" />
     <Compile Include="Topics\Functions\DoBindings.fs" />
     <Compile Include="Topics\Functions\LetBindings.fs" />
     <Compile Include="Topics\Functions\LambdaExpressions.fs" />
     <Compile Include="Topics\Functions\Functions.fs" />
+    <Compile Include="Topics\Types\Records\RecordExpressions.fs" />
+    <Compile Include="Topics\Types\Records\AnonymousRecords.fs" />
+    <Compile Include="Topics\Types\Records\Records.fs" />
+    <Compile Include="Topics\Types\DiscriminatedUnions.fs" />
+    <Compile Include="Topics\Types\ValueOptions.fs" />
+    <Compile Include="Topics\Types\Options.fs" />
     <Compile Include="Topics\Types\Common.fs" />
     <Compile Include="Topics\Types\Basic.fs" />
     <Compile Include="Topics\Types\Strings.fs" />
     <Compile Include="Topics\Types\Tuples.fs" />
-    <Compile Include="Topics\Types\Lists.fs" />
-    <Compile Include="Topics\Types\Arrays.fs" />
-    <Compile Include="Topics\Types\Sequences.fs" />
     <Compile Include="Topics\Values\Values.fs" />
     <Compile Include="Topics\Attributes.fs" />
     <Compile Include="Topics\Literals.fs" />
-    <Compile Include="Topics\Sets.fs" />
-    <Compile Include="Topics\Options.fs" />
     <Compile Include="Topics\Objects.fs" />
     <Compile Include="Topics\Common.fs" />
     <Compile Include="Topics\Modules.fs" />
@@ -31,6 +37,10 @@
     <Compile Include="Topics\Let.fs" />
     <Compile Include="Topics\Slices.fs" />
     <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Topics\Generics\" />
   </ItemGroup>
 
 </Project>
