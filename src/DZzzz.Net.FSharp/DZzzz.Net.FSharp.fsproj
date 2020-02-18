@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Topics\Generics\Generics.fs" />
     <Compile Include="Topics\CollectionTypes\Sets.fs" />
     <Compile Include="Topics\CollectionTypes\Map.fs" />
     <Compile Include="Topics\CollectionTypes\Lists.fs" />
@@ -21,8 +22,10 @@
     <Compile Include="Topics\Types\Records\AnonymousRecords.fs" />
     <Compile Include="Topics\Types\Records\Records.fs" />
     <Compile Include="Topics\Types\DiscriminatedUnions.fs" />
+    <Compile Include="Topics\Types\Classes.fs" />
     <Compile Include="Topics\Types\ValueOptions.fs" />
     <Compile Include="Topics\Types\Options.fs" />
+    <Compile Include="Topics\Types\Enumerations.fs" />
     <Compile Include="Topics\Types\Common.fs" />
     <Compile Include="Topics\Types\Basic.fs" />
     <Compile Include="Topics\Types\Strings.fs" />
@@ -30,6 +33,7 @@
     <Compile Include="Topics\Values\Values.fs" />
     <Compile Include="Topics\Attributes.fs" />
     <Compile Include="Topics\Literals.fs" />
+    <Compile Include="Topics\TypeAbbreviations.fs" />
     <Compile Include="Topics\Objects.fs" />
     <Compile Include="Topics\Common.fs" />
     <Compile Include="Topics\Modules.fs" />
@@ -37,10 +41,6 @@
     <Compile Include="Topics\Let.fs" />
     <Compile Include="Topics\Slices.fs" />
     <Compile Include="Program.fs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Topics\Generics\" />
   </ItemGroup>
 
 </Project>
