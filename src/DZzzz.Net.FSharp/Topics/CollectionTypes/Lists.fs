@@ -1,4 +1,6 @@
-﻿module Lists
+﻿//An ordered, immutable series of elements of the same type. Implemented as a linked list.
+
+module Lists
 
 // Simple definition
 let emptyList = []

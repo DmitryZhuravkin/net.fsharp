@@ -12,7 +12,7 @@ module FunctionsModule =
     let fImplParam (x: int) = x + 1
 
     // Function with implicit parameter types and return type
-    let fImplParamAndType (x: float) (y: float) : float = x + y
+    let fImplParamAndType (x: float) (y: float) : float = x + y // val fImplParamAndType : x:float -> y:float -> float
 
     // Function without parameters
     let fWithoutArgs () = 17 + 3
@@ -36,7 +36,7 @@ module FunctionsModule =
     let bigPipeVolume = cylinderVolume bigPipeRadius
 
     // Function as an input value of another function
-    let apply1 (transform: int -> int) y = transform y
+    let apply1 (transform: int -> int) y = transform y //val apply1 : transform:(int -> int) -> y:int -> int
 
     // Functions as an input (with multiple arguments)
     let apply2 (f: int -> int -> int) x y = f x y

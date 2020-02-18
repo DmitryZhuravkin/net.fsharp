@@ -10,7 +10,7 @@
 module Sequences
 
 // Sequence Expressions
-let seq1 = seq { 1 .. 5 }
+let seq1 = seq { 1 .. 5 } //val seq1 : seq<int>
 let seq2 = seq { 0 .. 10 .. 100 } // 10 in the middle - an increment between first and last element
 let seq3 = seq { for i in 1 .. 10 -> i * i }
 let seq4 = seq { for i in 1 .. 10 do yield i * i }

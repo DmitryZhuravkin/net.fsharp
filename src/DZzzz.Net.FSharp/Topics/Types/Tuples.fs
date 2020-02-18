@@ -15,7 +15,7 @@ let tupleMixed = ("one", 1, 2.0)
 let tupleExpressions = (a + 1, b + 1)
 
 // Struct Tuple of floats
-let structTuple = struct (1.025f, 1.5f)
+let structTuple = struct (1.025f, 1.5f) // val structTuple : struct (float32 * float32)
 
 // Pattern matching with tuple #1
 let print tuple1 =
