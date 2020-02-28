@@ -6,6 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Test.fs" />
+    <Compile Include="Topics\ActivePatterns.fs" />
     <Compile Include="Topics\Generics\Generics.fs" />
     <Compile Include="Topics\CollectionTypes\Sets.fs" />
     <Compile Include="Topics\CollectionTypes\Map.fs" />
